@@ -45,7 +45,7 @@ pipeline {
 
             steps {
 
-                sh 'docker build -t ${IMAGE_NAME}:newimage .'
+                sh 'docker build -t ${IMAGE_NAME}:latestv1 .'
             }
         }
 

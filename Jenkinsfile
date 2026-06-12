@@ -8,7 +8,7 @@ pipeline {
 
         TOMCAT_PATH = '/var/lib/tomcat10/webapps/'
 
-        IMAGE_NAME = 'maven'
+        IMAGE_NAME = 'file'
         CONTAINER_NAME = 'web-app'
     }
 
@@ -45,7 +45,7 @@ pipeline {
 
             steps {
 
-                sh 'docker build -t ${IMAGE_NAME}:latestversion1 .'
+                sh 'docker build -t ${IMAGE_NAME}:latest .'
             }
         }
 

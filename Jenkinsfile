@@ -74,13 +74,7 @@ pipeline {
             }
         }
 
-        stage('Deploy Tomcat') {
-
-            steps {
-
-                    sh "sudo cp target/*.war {TOMCAT_PATH}war.war"
-                }
-            }
+        
         
     }
 
